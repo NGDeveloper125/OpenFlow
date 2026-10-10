@@ -1,0 +1,11 @@
+[workspace]
+members = ["crates/*"]
+# Without this, a virtual workspace silently falls back to the old resolver
+# and cargo warns on every build.
+resolver = "3"
+
+# Settings shared by every crate in the workspace. Members opt in with
+# `field.workspace = true` instead of repeating themselves.
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
