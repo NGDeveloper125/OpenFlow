@@ -1,0 +1,7 @@
+body { margin: 0; font-family: system-ui, sans-serif; }
+.topbar { display: flex; justify-content: space-between; padding: .5rem 1rem; border-bottom: 1px solid #ccc; }
+.layout { display: grid; grid-template-columns: 200px 1fr; min-height: calc(100vh - 2.5rem); }
+nav { display: flex; flex-direction: column; gap: .25rem; padding: 1rem; border-right: 1px solid #ccc; }
+nav a.active { font-weight: bold; }
+main { padding: 1rem; }
+.err { color: crimson; }

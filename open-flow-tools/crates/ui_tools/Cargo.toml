@@ -1,0 +1,14 @@
+[package]
+name = "ui_tools"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+# cdylib is the form the wasm target links. No rlib is needed: nothing depends
+# on this crate as a Rust library, and the code worth testing lives in
+# domain.
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+domain = { path = "../domain" }
